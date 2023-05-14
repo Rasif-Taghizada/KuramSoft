@@ -1,0 +1,311 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500&display=swap');
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+
+/* Header component */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #F6F6F6;
+}
+
+.left-content img {
+    height: 80px;
+}
+
+.right-content {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.01em;
+}
+
+.right-content a {
+    color: #441E61;
+}
+
+/* Main content */
+main {
+    display: flex;
+    height: calc(100vh - 103px);
+    position: relative;
+}
+
+.left-side {
+    flex-basis: 50%;
+    background-image: url("../Images/Ekran\ arka\ fon\ resmi.jpg");
+    background-repeat: no-repeat;
+}
+
+.blur-img {
+    background-image: url('../Images/Blur.svg');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.blur-img>h1 {
+    width: 350px;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blur-img>p {
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 430px;
+    text-align: center;
+}
+
+.blur-img>img {
+    width: 290px;
+}
+
+.right-side {
+    flex-basis: 50%;
+    background: #E6E6E6;
+}
+
+/* Form Container */
+.form-container {
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container>h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.input-group>input:focus~label,
+.input-group>input:valid~label {
+    top: -3px;
+    background: #E6E6E6;
+    font-size: 14px;
+}
+
+form input {
+    padding: 13px 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    border: 1px solid #BEBEBE;
+    border-radius: 100px;
+}
+
+/* select-menu */
+#select-menu {
+    width: 315px;
+    height: 50px;
+    background: #EAEAEA;
+    border: 1px solid #BEBEBE;
+    border-radius: 100px;
+}
+
+
+
+/* Input group */
+
+.input-group {
+    position: relative;
+    width: 315px;
+}
+.pass-eye{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: red;
+    pointer-events: none;
+    font-size: 1em;
+    transition: .5s all ease-in-out;
+}
+
+/* Form reset */
+.form-reset {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-reset>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-reset input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.form-reset :where(a, label) {
+    color: #5FA5D8;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#login-btn {
+    background: #441E61;
+    box-shadow: 0px 4px 20px rgba(68, 30, 97, 0.54);
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 17px 130px 23px 130px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#login-btn:focus {
+    transform: scale(0.99)
+}
+
+/* Form contact */
+.form-contact {
+    text-align: center;
+    height: 50px;
+}
+
+.form-contact>a {
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-contact>.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/* Styles for Custom Select Box */
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    position: relative;
+}
+
+.select-box .options-container {
+    background: #f8f8f8;
+    color: #2c3341;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+}
+
+.selected {
+    background: transparent;
+    border-radius: 100px;
+    border: 1px solid #BEBEBE;
+    margin-bottom: 8px;
+    color: #2c3341;
+    position: relative;
+    order: 0;
+}
+
+.selected::after {
+    content: "";
+    background: url("../Images/arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+    transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+    position: absolute;
+    max-height: 240px;
+    opacity: 1;
+    top: 50px;
+    overflow-y: scroll;
+}
+
+.select-box .options-container.active+.selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: #2c3341;
+    border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.select-box .option:hover {
+    background: #e5e5e5;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
+}

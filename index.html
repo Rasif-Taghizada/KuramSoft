@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <section>
+        <sidebar class="left-side">
+            <div>
+                <img src="./Images/Frame.jpg" alt="Dashboard Logo" />
+            </div>
+            <ul>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i></a></li>
+                <li class="active"><a href="#"><i class="fa-solid fa-align-left"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                <li><a href="#"><ion-icon name="grid"></ion-icon></a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-pie"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+            <div></div>
+        </sidebar>
+        <article class="right-side">
+            <header>
+                <div class="header-left dropdown-container">
+                    <div class="header-left-select dropdown-selected">
+                        <input class="select-text" value="sigorta.square.com" readonly type="text">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-options">
+                        <p>Option1</p>
+                        <p>Option2</p>
+                        <p>Option3</p>
+                        <p>Option4</p>
+                        <p>Option5</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-right-form">
+                        <div class="form-left dropdown-container">
+                            <div class="form-left-select dropdown-selected">
+                                <input class="select-text" value="Document" readonly type="text">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="form-left-options dropdown-options">
+                                <p>Security</p>
+                                <p>Auto</p>
+                                <p>Data Model</p>
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <input type="text" placeholder="Ara">
+                            <i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+                        </div>
+                    </div>
+                    <div class="select-lang dropdown-container">
+                        <div class="select dropdown-selected">
+                            <input class="select-text" value="ENG" readonly type="text">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="lang-options dropdown-options">
+                            <p>AZ</p>
+                            <p>RUS</p>
+                            <p>TUR</p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <div class="user-grid">
+                            <div class="user-img">
+                                <img src="./Images/user-photo.svg" alt="User photo">
+                            </div>
+                            <div class="user-about">
+                                <h3>Ferit Arif Çiçek</h3>
+                                <p>Yazılımcı</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="header-about">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </div>
+                <span></span>
+                <div>
+                    <span>Square</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <span></span>
+                <div>
+                    <p>OverduePaymentsReports.aspx</p>
+                </div>
+            </div>
+            <nav class="nav-forms">
+                <div class="nav-forms-top">
+                    <h2>Formlar</h2>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search by keywords">
+                    </div>
+                    <ul class="nav-lists">
+                        <li class="list-active"><a href="#">Dashboard <i class="fa-solid fa-plus"></i></a>
+                            <ul class="nested-list">
+                                <li style="--i:1;"><a href="#"><img src="./Images/corner-down-right.svg" alt="corner-down-right">
+                                        Textbox</a></li>
+                                <li style="--i:2;"><a href="#"><img src="./Images/corner-down-right.svg" alt="corner-down-right">
+                                        Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Text Box <i class="fa-solid fa-plus"></i></a></li>
+                        <li><a href="#">Security <i class="fa-solid fa-plus"></i></a></li>
+                        <li><a href="#">Gallery <i class="fa-solid fa-plus"></i></a></li>
+                        <li><a href="#">Files <i class="fa-solid fa-plus"></i></a></li>
+                        <li><a href="#">Treeview <i class="fa-solid fa-plus"></i></a></li>
+                        <li><a href="#">Auto <i class="fa-solid fa-plus"></i></a>
+                            <ul class="nested-list">
+                                <li style="--i:0"><a href="#"><img src="./Images/corner-down-right.svg" alt="corner-down-right">
+                                        Textbox</a></li>
+                                <li style="--i:1"><a href="#"><img src="./Images/corner-down-right.svg" alt="corner-down-right">
+                                        Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Data Model <i class="fa-solid fa-plus"></i></a></li>
+                        <li><a href="#">Setting <i class="fa-solid fa-plus"></i></a>
+                            <ul class="nested-list">
+                                <li style="--i:0"><a href="#"><img src="./Images/corner-down-right.svg" alt="corner-down-right">
+                                        Textbox</a></li>
+                                <li style="--i:1"><a href="#"><img src="./Images/corner-down-right.svg" alt="corner-down-right">
+                                        Gallery</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-forms-bottom"></div>
+            </nav>
+        </article>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

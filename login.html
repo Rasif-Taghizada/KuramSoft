@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-content">
+            <img src="./Images/logo.svg" alt="">
+        </div>
+        <div class="right-content">
+            <p>For services updates, foolow us on developersite </p>
+            <span><a href="https://www.kuramsoft.com/" target="_blank">developer.kuramsoft.com</a></span>
+        </div>
+    </header>
+    <main>
+        <div class="left-side">
+            <div class="blur-img">
+                <h1>Manage everything!</h1>
+                <p>Use KuramPortal and manage every sites from only one site.</p>
+                <img src="./Images/Sign-in.png" alt="Sign-in">
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="form-container">
+                <h2>Sign in</h2>
+                <form>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" required>
+                        <label>Password</label>
+                        <span class="pass-eye"><i class="fa-solid fa-eye-slash"></i></span>
+                    </div>
+                    <div class="select-box">
+                        <div class="options-container">
+                            <div class="option">
+                                <input type="radio" class="radio" name="duty" />
+                                <label>file.hq.bim.com.tr</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="duty" />
+                                <label>file.hq.bim.com.tr 1</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio" name="duty" />
+                                <label>file.hq.bim.com.tr 2</label>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            Seç
+                        </div>
+                    </div>
+                    <div class="form-reset">
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Remember me</label>
+                        </div>
+                        <a href="#">Forgot password ?</a>
+                    </div>
+                    <button id="login-btn">Login</button>
+                </form>
+            </div>
+            <div class="form-contact">
+                <a>Bizimle İletişim Kurun</a>
+                <span class="dot"></span>
+                <a>Kullanım Koşulları</a>
+                <span class="dot"></span>
+                <a>Gizlilik ve Tanımlama Bilgileri</a>
+            </div>
+        </div>
+    </main>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
